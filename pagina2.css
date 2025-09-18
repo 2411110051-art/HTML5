@@ -1,0 +1,135 @@
+html,
+body {
+	/*height: 100%;*/
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #c21500;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.box {
+	display: flex;
+}
+
+.box .inner {
+	width: 400px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background: #c21500;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: darkred;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background: #c21500;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centra los botones */
+  gap: 20px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;          /* Espacio interno → ancho x alto */
+  background: #c21500;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   /* Color del botón */
+  color: white;                /* Texto blanco */
+  text-decoration: none;       /* Quita subrayado */
+  border-radius: 10px;         /* Bordes redondeados (ajusta a tu gusto) */
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  background-color: #16a085;   /* Color al pasar el mouse */
+}
+
+section{
+    background: #fffc00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color:#e9e20d;
+    color:azure;
+    margin-top: 40px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+footer a {
+  font-size: inherit;
+}
+footer a:hover{
+    font-size: 50px;
+}
+
+a{
+    font-size: 25px;
+    text-decoration: none;
+    color: azure;
+}
+a:hover{
+    color: lch(34.8% 125.3 304.61);
+    font-size:30px;
+    text-decoration: underline;
+}
